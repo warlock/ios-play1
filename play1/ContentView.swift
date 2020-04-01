@@ -15,8 +15,12 @@ struct ContentView: View {
             .font(.custom("Gill Sans", size: 26))
             .foregroundColor(.blue)
             .multilineTextAlignment(.center)
-        .lineLimit(3)
+            .lineLimit(3)
             .truncationMode(.middle)
+            .lineSpacing(10)
+            .padding()
+            .rotationEffect(.degrees(15), anchor: UnitPoint(x: 0, y: 0))
+        
     }
 }
 
